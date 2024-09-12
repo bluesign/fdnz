@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+pre > code {
+  font-family:  monospace;
+}
+
+.lineLinkHighlight {
+  background-color: #ff00003f;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-color: transparent;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  #root{
+    background-color: transparent;
+  }
+}
