@@ -2,6 +2,7 @@ import NonFungibleToken from 0xNonFungibleToken
 import MetadataViews from 0xMetadataViews
 import ViewResolver from 0xMetadataViews
 
+
 access(all) fun main(address:Address, path:String, id:UInt64):AnyStruct{
 
         var acc = getAuthAccount<auth(Storage) &Account>(address)
@@ -43,6 +44,7 @@ access(all) fun main(address:Address, path:String, id:UInt64):AnyStruct{
         }
         else{
             var col = acc.storage.borrow<&AnyResource>(from: StoragePath(identifier: path)!)! as AnyStruct
+
             return col
         }
 }
